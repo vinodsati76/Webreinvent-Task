@@ -1,0 +1,28 @@
+.Border {position: absolute;inset: -4px;border: 1px solid #ffffff42;border-radius: 6px;z-index: 1;overflow: hidden;}
+
+/***hero section lines**/
+.Hlines {position: absolute;top: 0;left: 3rem;display: flex;flex-wrap: wrap;gap: 6.5rem;z-index: -1;justify-content: center;right: 3rem;filter: blur(21.600000381469727px);}
+.Line {width: 65px;height: 250px;background: linear-gradient(180deg, rgba(33, 33, 63, 0.31) 46.69%, rgba(33, 33, 63, 0) 100%);}
+
+/******hero section curv line*******/
+.Cline {overflow: hidden;z-index: -1;}
+.cline {position: absolute;left: 0;right: 0;margin: auto;border-radius: 50%;border: 1px solid #ffffff17;animation: softGlow 6s ease-in-out infinite;z-index: -1;}
+.cline1 {width: 850px;height: 720px;bottom: -325px;animation-delay: 0s;}
+.cline2 {width: 700px;height: 600px;bottom: -280px;animation-delay: 1.5s;}
+.cline3 {width: 550px;height: 500px;bottom: -240px;animation-delay: 3s;  }
+@keyframes softGlow {
+  0%, 100% {box-shadow: 0 0 0px rgba(255, 255, 255, 0.08);}
+  50% {box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);}
+}
+/******hero section curv line end*******/
+
+
+/*************hero section button************/
+.Border, .Border2, .Border3 {border: 1px solid rgba(255, 255, 255, 0.1);pointer-events: none;}
+.Border::after, .Border2::after {content: "";position: absolute;inset: 0;border-radius: inherit;border: 1px solid transparent;background: linear-gradient(90deg, #fff, #fff, transparent);background-size: 200% auto;background-clip: border-box;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite: xor;mask-composite: exclude;animation: move-border 6s linear infinite;
+  z-index: 1;border-radius: inherit;}
+@keyframes move-border {
+  0% {background-position: 0% center;}
+  100% {background-position: 200% center;}
+}
+/*************hero section button end************/
